@@ -92,19 +92,24 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_TIM1_Init();
+  MX_TIM15_Init();
+  MX_TIM2_Init();
+  MX_TIM3_Init();
+  MX_TIM7_Init();
 
   /* USER CODE BEGIN 2 */
 
-	HAL_GPIO_WritePin(SYS_LED0_GPIO_Port, SYS_LED0_Pin, GPIO_PIN_RESET);
-	Base_Ch1_Start();		
-
+	HAL_GPIO_WritePin(SYS_LED0_GPIO_Port, SYS_LED0_Pin, GPIO_PIN_RESET);	
+	Base_Para_Init();
+	HAL_TIM_Base_Start_IT(&htim7);
+//	Base_Ch0_Start();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-		
+		Base_Process();
 
 //		if(finish)
 //		{

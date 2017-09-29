@@ -46,10 +46,32 @@
 
 /* Private define ------------------------------------------------------------*/
 
-#define BaseCh1_Pin GPIO_PIN_8
-#define BaseCh1_GPIO_Port GPIOA
+#define BaseCh3_Pin GPIO_PIN_6
+#define BaseCh3_GPIO_Port GPIOA
+#define B_Ch3PWM_Pin GPIO_PIN_7
+#define B_Ch3PWM_GPIO_Port GPIOA
+#define BaseCh2_Pin GPIO_PIN_10
+#define BaseCh2_GPIO_Port GPIOB
+#define B_Ch2PWM_Pin GPIO_PIN_11
+#define B_Ch2PWM_GPIO_Port GPIOB
+#define BaseCh1_Pin GPIO_PIN_14
+#define BaseCh1_GPIO_Port GPIOB
+#define B_Ch1PWM_Pin GPIO_PIN_15
+#define B_Ch1PWM_GPIO_Port GPIOB
+#define BaseCh0_Pin GPIO_PIN_8
+#define BaseCh0_GPIO_Port GPIOA
+#define B_Ch0PWM_Pin GPIO_PIN_9
+#define B_Ch0PWM_GPIO_Port GPIOA
 #define SYS_LED0_Pin GPIO_PIN_3
 #define SYS_LED0_GPIO_Port GPIOB
+#define LedCh0_Pin GPIO_PIN_4
+#define LedCh0_GPIO_Port GPIOB
+#define LedCh1_Pin GPIO_PIN_5
+#define LedCh1_GPIO_Port GPIOB
+#define LedCh2_Pin GPIO_PIN_6
+#define LedCh2_GPIO_Port GPIOB
+#define LedCh3_Pin GPIO_PIN_7
+#define LedCh3_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
